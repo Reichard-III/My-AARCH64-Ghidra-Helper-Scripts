@@ -60,7 +60,7 @@ public class CreateEnumFromFile extends GhidraScript {
 				if(m.group(2)!=null)
 					index=Integer.parseInt(m.group(2));
 				String entry = String.format("%d - %s", index,m.group(1));
-				print(entry);
+				println(entry);
 				NewEnum.add(entry, index++);
 			}
 			DataTypeManager dtm = currentProgram.getDataTypeManager();
